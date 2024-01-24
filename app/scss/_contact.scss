@@ -1,0 +1,127 @@
+.contact {
+    padding-bottom: 12rem;
+}
+.contact__title {
+    margin-bottom: 4rem;
+    font-size: 3.6rem;
+    font-weight: 500;
+}
+.contact-block {
+    margin-bottom: 11rem;
+    display: flex;
+}
+.tabs {
+    width: 58rem;
+}
+.tabs__item {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 4rem;
+    border-bottom: 1px solid  #DCDCDC;
+}
+.tabs__item-btn {
+    padding-bottom: 1rem;
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    color: #DCDCDC;
+    font-weight: 500;
+}
+.tabs-active{
+    padding-bottom: 1rem;
+    color: #32B4D9;
+    border-bottom: 1px solid  #32B4D9;
+}
+.tabs__content-name {
+    margin-bottom: .5rem;
+    font-weight: 500;
+}
+.tabs__content-text {
+    margin-bottom: .5rem;
+    font-size: 2rem;
+}
+.tabs__content-time {
+    margin-bottom: 3rem;
+    font-size: 1.4rem;
+    color: #B3B3B3;
+}
+.tabs__content-phone {
+    font-size: 2rem;
+}
+.tabs__content-phone{
+    color: #282828;
+}
+
+.tabs__content-phone span{
+    color: #32B4D9;
+}
+.contact-block__map {
+    margin-left: 10rem;
+}
+.contact-map{
+    width: 58rem;
+    height: 29rem;
+}
+.contact-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 58rem;
+    margin: 0 auto 0 auto;
+    padding: 3rem 5rem 4rem 5rem;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 2px 2px 7px 0px rgba(40, 40, 40, 0.21);
+}
+.contact-card__subtitle {
+    margin-bottom: .5rem;
+    font-weight: 500;
+    color: #32B4D9;
+    text-align: center;
+}
+.contact-card__img {
+    margin-bottom: 1rem;
+    width: 70px;
+}
+.contact-card__name {
+    margin-bottom: .5rem;
+    font-size: 2rem;
+    font-weight: 500;
+}
+.contact-card__text {
+    margin-bottom: 2rem;
+    font-size: 1.4rem;
+    color: #B3B3B3;
+}
+.contact-card__phone {
+    margin-bottom: 3rem;
+    display: block;
+    font-size: 2rem;
+    color: #282828;
+}
+.contact-card__phone span{
+    color: #32B4D9;
+}
+.contact-card__btn {
+    width: 21rem;
+    height: 4rem;
+    line-height: 4rem;
+    background-color: #32B4D9;
+    color: #FFF;
+    font-size: 1.4rem;
+    text-align: center;
+    font-weight: 500;
+    border-radius: 20px;
+    transition: all .4s ease-in;
+}
+.contact-card__btn:hover{
+    background-color: #046884;
+    transition: all .4s ease-in;
+}
+.show{
+    display: block;
+}
+.hide{
+    display: none;
+}
