@@ -1,0 +1,82 @@
+.stock {
+    padding-bottom: 16rem;
+}
+.stock__title {
+    margin-bottom: 4rem;
+    font-size: 3.6rem;
+}
+.stock-block {
+    display: flex;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+.stock-block__item {
+    width: 48%;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 2px 2px 7px 0px rgba(40, 40, 40, 0.21);
+}
+.stock-block__item:nth-child(1),
+.stock-block__item:nth-child(4),
+.stock-block__item:nth-child(7){
+    background: #3BB16D;
+}
+.stock-block__content {
+    width: 37rem;
+    padding-left: 4rem;
+    padding-bottom: 4rem;
+}
+.stock-block__item:nth-child(2),
+.stock-block__item:nth-child(5){
+    background: #FFF;
+}
+.stock-block__item:nth-child(2) .stock-block__content-title,
+.stock-block__item:nth-child(5) .stock-block__content-title,
+.stock-block__item:nth-child(2) .stock-block__content-text,
+.stock-block__item:nth-child(5) .stock-block__content-text{
+    color: #282828;
+}
+
+.stock-block__item:nth-child(3),
+.stock-block__item:nth-child(6){
+    background: #32B4D9;
+}
+.stock-block__content-title {
+    padding-top: 4rem;
+    margin-bottom: 4rem;
+    font-size: 1.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: normal;
+}
+.stock-block__content-text {
+    margin-bottom: 4rem;
+    font-size: 1.5rem;
+    color: #fff;
+}
+.stock-block__content-btn {
+    display: block;
+    width: 22rem;
+    height: 4rem;
+    line-height: 4rem;
+    border-radius: 25px;
+    background: #FFF;
+    text-align: center;
+    font-size: 1.4rem;
+    color: #3BB16D;
+}
+.stock-block__item-img img{
+    height: 100%;
+}
+.stock-block__content-button {
+    display: block;
+    width: 22rem;
+    height: 4rem;
+    line-height: 4rem;
+    border-radius: 25px;
+    background: #32B4D9;
+    text-align: center;
+    font-size: 1.4rem;
+    color: #fff;
+}

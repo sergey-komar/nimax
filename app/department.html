@@ -46,7 +46,7 @@
         </div>
       </div>
 
-      <nav class="nav">
+      <nav class="nav nav-page">
         <ul class="menu__list">
           <li>
             <a href="#">Каталог</a>
@@ -114,7 +114,6 @@
               </div>
               
             </div>
-           
           </li>
           <li>
             <a href="#">Наши работы</a>
@@ -123,26 +122,143 @@
             <a href="#">Цены</a>
           </li>
           <li>
-            <a href="./stock.html">Акции</a>
+            <a href="#">Акции</a>
           </li>
           <li>
             <a href="#">О компании</a>
           </li>
           <li>
-            <a href="./department.html">Отдел гарантии</a>
+            <a href="#">Отдел гарантии</a>
           </li>
           <li>
             <a href="./reviews.html">Отзывы</a>
           </li>
           <li>
-            <a href="./contact.html">Контакты</a>
+            <a class="menu__iten-active" href="#">Контакты</a>
           </li>
         </ul>
       </nav>
     </div>
   </header>
   
-    <main class="main"></main>
+    <main class="main">
+      <div class="breadcrumbs">
+        <div class="container">
+          <ul class="breadcrumbs__list">
+            <li>
+              <a href="#">Главная</a>
+            </li>
+            <li>
+              <a href="#">< Отдел гарантии</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <section class="department">
+        <div class="container">
+            <h1 class="department__title">Отдел гарантии</h1>
+            <div class="department-block">
+                <div class="department-block__content">
+                    <p class="department-block__content-text">
+                        Мы понимаем, что иногда возникают ситуации, требующие внимания и решения. Если у вас возникла проблема, мы готовы оперативно и профессионально реагировать.
+                    </p>
+                    <div class="department-block__content-title">
+                        Как оставить обращение:
+                    </div>
+                    <ol class="department-block__list">
+                        <li class="department-block__list-title">
+                            <span>Онлайн-Форма:</span> Заполните нашу <a href="#">онлайн-форму</a>, предоставив все необходимые детали. Мы обещаем рассмотреть ваш запрос в кратчайшие сроки.
+                        </li>
+                        <li class="department-block__list-title">
+                            <span>Телефонная линия поддержки:</span> Если вы предпочитаете разговор по телефону, позвоните нам по номеру <a href="tel:+74732020043">+7 473 202-00-43</a>  и сообщите о вашей жалобе. Связаться с отделом гарантии можно по будням 9:00-18:00.
+                        </li>
+                    </ol>
+                    <div class="department-block__content-info">
+                        Благодарим за ваше терпение и обратную связь, которая помогает нам улучшать наши услуги.
+                    </div>
+                </div>
+
+                <div class="department-block__card">
+                    <div class="contact-card">
+                        <div class="contact-card__img">
+                          <img src="./images/contact-img.png" alt="img">
+                        </div>
+                        <div class="contact-card__name">Евгений</div>
+                        <p class="contact-card__text">Руководитель отдела качества и службы поддержки</p>
+                        <a href="#" class="contact-card__phone">
+                          <span>+7 473</span> 2022043
+                        </a>
+                        <a href="#" class="contact-card__btn">Отдел гарантии</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="departameny__inner">
+            <div class="container">
+                <div class="tabs__content-reviews">
+                    <form  class="reviews-form">
+                        <div class="reviews-form__left">
+                            <div class="reviews-form__top">
+                                <div class="reviews-form__top-title">Оставить обращение</div>
+                                <div class="reviews-form__top-rating">
+                                    <img src="./images/reviews/big-reviews.png" alt="img">
+                                </div>
+                            </div>
+                            <input type="text" class="reviews-form__input" placeholder="Ваше имя*" required>
+                            <input type="text" class="reviews-form__input" placeholder="Телефон*" required>
+                            <input type="text" class="reviews-form__input" placeholder="E-mail" required>
+                            <button class="reviews-form__btn">Отправить сообщение</button>
+                        </div>
+    
+                        <div class="reviews-form__right">
+                            <input class="reviews-form__right-theme" placeholder="Номер заказа при наличии"></input>
+                            <textarea class="reviews-form__right-textarea" placeholder="Опишите вашу проблему*"></textarea>
+                            <div class="reviews-form__bottom">
+                                <a href="#" class="reviews-form__bottom-file">
+                                    Прикрепить файлы (0)
+                                </a>
+                                <div class="reviews-form__close">
+                                    <div class="reviews-form__close-link">
+                                        image 2023-12-12 в 19.08.13.png <span>(123 Кб)</span>
+                                    </div>
+                                    <div class="reviews-form__close-link">
+                                        image 2023-12-12 в 19.08.13.png <span>(123 Кб)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+      </section>
+     
+
+      <section class="questions">
+        <div class="container">
+          <div class="questions-block">
+            <div class="questions-block__content">
+              <div class="questions-block__content-title">Остались вопросы?</div>
+              <p class="questions-block__content-text">
+                Оставьте заявку на звонок, и мы обязательно с вами свяжемся в ближайшее время
+              </p>
+            </div>
+            <form class="questions-block__form">
+              <div class="questions-block__top">
+                <input type="text" class="questions-block__form-input" placeholder="Ваше имя*" required>
+                <input type="text" class="questions-block__form-input" placeholder="Ваш телефон*" required>
+              </div>
+              <button class="questions-block__form-btn">Оставить заявку</button>
+              <p class="questions-block__form-text">
+                *отправляя заявку Вы принимаете условия <span>пользовательского соглашения</span>
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer class="footer">
       <div class="container">
         <div class="footer-block">

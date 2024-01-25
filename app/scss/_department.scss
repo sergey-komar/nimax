@@ -1,0 +1,39 @@
+.department__title {
+    margin-bottom: 4rem;
+    font-size: 3.6rem;
+    font-weight: 500;
+}
+.department-block {
+    margin-bottom: 7rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+}
+.department-block__content {
+    max-width: 58rem;
+}
+.department-block__content-text {
+    margin-bottom: 3rem;
+    line-height: 2.4rem;
+}
+.department-block__content-title {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.department-block__list-title {
+    margin-bottom: 2rem;
+    line-height: 2.4rem;
+}
+.department-block__list-title span{
+    font-weight: 600;
+}
+.department-block__list-title a{
+    color: #32B4D9;
+    font-weight: 500;
+}
+.departameny__inner {
+    padding-top: 4rem;
+    padding-bottom: 6rem;
+    background: rgba(220, 220, 220, 0.30);
+}
