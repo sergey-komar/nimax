@@ -187,6 +187,54 @@
 .menu__list li:first-child:hover .hover-menu{
     display: block;
 }
+.mobile-about {
+    display: none;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    box-shadow: 1px 12px 10px rgba(0, 0, 0, 0.2), 2px 13px 6px rgba(0, 0, 0, 0.2);
+}
+.mobile-about__inner {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    max-width: 114rem;
+    margin-left: auto;
+    margin-right: auto;   
+}
+.mobile-about__list {
+    display: flex;
+    justify-content: space-between;
+}
+.mobile-about__list-item {
+   padding: 1rem;
+   border-radius: 5px;
+    background: #FFF;
+    box-shadow: 1px 1px 3px 0px rgba(40, 40, 40, 0.21)
+}
+.mobile-about__item {
+    display: flex;
+    gap: 1rem;
+}
+.mobile-about__item-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #32B4D9;
+    text-transform: uppercase;
+    transition: all .4s ease-in;
+}
+.mobile-about__item-title:hover{
+    color: #046884;
+    transition: all .4s ease-in;
+}
+.menu__list li:nth-child(5):hover .mobile-about{
+    display: block;
+}
+.mobile-about__item:hover{
+    padding-bottom: 0 !important;
+    border-bottom: none !important;
+}
 .breadcrumbs{
     padding-top: 4rem;
     padding-bottom: 2rem;
