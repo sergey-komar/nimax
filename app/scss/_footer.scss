@@ -93,6 +93,9 @@
     background-color: #fff;
     transition: all .4s ease-in;
 }
+.footer-block__item-calc--mobile{
+    display: none;
+}
 .footer-block__item-call::before{
     position: absolute;
     content: '';

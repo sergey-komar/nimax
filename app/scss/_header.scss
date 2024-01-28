@@ -37,6 +37,11 @@
     align-items: center;
     gap: 2rem;
 }
+.mobile__phone,
+.mobile__calc,
+.mobile-logo{
+    display: none;
+}
 .header-top__right-calc {
     position: relative;
     padding: 1.2rem 3rem 1.1rem 5rem;
@@ -112,23 +117,23 @@
     display: flex;
     gap: 1rem;
 }
-.nav {
+.menu {
     padding-top: 2rem;
     padding-bottom: 2rem;
+    border-bottom: 1px solid #DCDCDC;
 }
 .menu__list {
     display: flex;
     justify-content: space-around;
-}
-.menu__list li{
-  
 }
 .menu__list li a{
     font-weight: 600;
     transition: all .4s ease-in;
     color: #282828;
 }
-
+.menu__list li a.menu__active{
+    color: #32B4D9;
+}
 .menu__list li a:hover{
     color: #32B4D9;
     transition: all .4s ease-in;
@@ -141,7 +146,7 @@
 .nav-page{
     border-bottom: 1px solid  #DCDCDC;
 }
-.menu__iten-active{
+.menu__item-active{
     padding-bottom: 2rem;
     border-bottom: 4px solid  #32B4D9;
 }
