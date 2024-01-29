@@ -8,8 +8,76 @@ $(function () {
         $(this).next().slideToggle(500); 
      });
 
+     $('.calculator-content__price').on('click', function(){
+        $('.calculator-hidden').slideToggle(500); 
+        return false;
+     });
 
-     $('.product-slide__thumb').slick({
+     $('.work-slide__thumb').slick({
+		asNavFor: '.work-slide__big',
+		focusOnSelect: true,
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		draggable: false
+		
+	  });
+
+	  $('.work-slide__big').slick({
+		asNavFor: '.work-slide__thumb',
+		draggable: false,
+		arrows: false,
+		fade: true
+	  });
+
+
+      $('.reviews-home__box').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        dots: false
+      });
+
+      $('.certificates-slider__inner').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        dots: false,
+        responsive: [
+            {
+              breakpoint: 1200,
+              settings: {
+                slidesToShow: 4,
+                slidesToScroll: 1
+                
+              }
+            },
+            {
+                breakpoint: 950,
+                settings: {
+                  slidesToShow: 3,
+                  slidesToScroll: 1
+                  
+                }
+              },
+              {
+                breakpoint: 700,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 1
+                  
+                }
+              },
+              {
+                breakpoint: 500,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1
+                  
+                }
+              },
+          ]
+      })
+
+//product
+      $('.product-slide__thumb').slick({
 		asNavFor: '.product-slide__big',
 		focusOnSelect: true,
 		slidesToShow: 3,
@@ -26,17 +94,23 @@ $(function () {
 	  });
 
 
-      $('.reviews-home__box').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        dots: false
-      });
+//peculiarities
+$('.peculiarities-slide__thumb').slick({
+    asNavFor: '.peculiarities-slide__big',
+    focusOnSelect: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    draggable: false
+    
+  });
 
-      $('.certificates-slider__inner').slick({
-        slidesToShow: 5,
-        slidesToScroll: 1,
-        dots: false
-      })
+  $('.peculiarities-slide__big').slick({
+    asNavFor: '.peculiarities-slide__thumb',
+    draggable: false,
+    arrows: false,
+    fade: true
+  });
+
 
 
 
@@ -171,6 +245,46 @@ if(tabsItemProduct && tabsItemBtnProduct && tabsContentProduct){
 }
 
 
+const tabsItemColor = document.querySelector('.tabs-color__item-top');
+const tabsItemBtnColor = document.querySelectorAll('.tabs-color__item-btn');
+const tabsContentColor = document.querySelectorAll('.tabs-color__content');
+
+function tabsHideColor(){
+    tabsContentColor.forEach(item => {
+        item.classList.add('hide');
+        item.classList.remove('show');
+    });
+
+    tabsItemBtnColor.forEach(btn =>{
+        btn.classList.remove('tabs-color__item-btn--active');
+    })
+}
+function tabsShowColor(i){
+    tabsContentColor[i].classList.add('show');
+    tabsContentColor[i].classList.remove('hide');
+    tabsItemBtnColor[i].classList.add('tabs-color__item-btn--active');
+}
+
+if(tabsItemColor && tabsItemBtnColor && tabsContentColor){
+    tabsItemColor.addEventListener('click', (e)=>{
+        const target = e.target;
+        
+        if(target && target.classList.contains('tabs-color__item-btn')){
+            tabsItemBtnColor.forEach((item, i)=>{
+                if(target == item){
+                    tabsHideColor();
+                    tabsShowColor(i);
+                }
+               
+            })
+           
+        }
+    })
+    
+    tabsHideColor();
+    tabsShowColor(0);
+}
+
 
 
 
@@ -214,6 +328,11 @@ if(tabsItemCalculator && tabsItemBtnCalculator && tabsContentCalculator){
     tabsHideCalculator();
     tabsShowCalculator(0);
 }
+
+
+
+
+
 
 
     const questionsAccardionTitle = document.querySelectorAll('.questions-accardion__title');

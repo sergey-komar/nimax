@@ -42,6 +42,7 @@
     margin-bottom: 4rem;
     font-size: 3.6rem;
     font-weight: 500;
+    line-height: 4rem;
 }
 .advantages-block__item {
     margin-bottom: 5rem;
@@ -113,6 +114,11 @@
 //CERTIFICATES
 .certificates {
     padding-bottom: 18rem;
+}
+.certificates__title{
+    margin-bottom: 4rem;
+    font-size: 3.6rem;
+    font-weight: 500;
 }
 .certificates-slider__item-img {
     display: flex;

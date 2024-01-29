@@ -265,6 +265,7 @@
     padding: 3rem 6rem;
     background: #FFF;
     border-radius: 10px;
+    cursor: pointer;
 }
 .calculator-content__price-title {
     position: relative;
@@ -373,6 +374,24 @@
 .calculator-content__range-input--active::placeholder{
     color: #32B4D9;
 }
+.calculator-hidden {
+    display: none;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #DCDCDC;
+}
+.calculator-hidden__item {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.calculator-hidden__item-text {
+    font-size: 1.4rem;
+}
+.calculator-hidden__item-price {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
 
 
 
@@ -394,7 +413,7 @@
     gap: 4rem;
 }
 .ready-block__item {
-    width: calc(100% / 4 -4rem);
+    width: calc(100% / 4 - 4rem);
 }
 .ready-block__item-title {
     padding-left: 2rem;
@@ -471,4 +490,11 @@
     background: url('../images/home/slider-right-arrows.svg') no-repeat;
     right: -20px;
    
+}
+
+
+
+//
+.catalog-block{
+   padding-bottom: 5rem;
 }

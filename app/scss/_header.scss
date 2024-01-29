@@ -246,7 +246,22 @@
 }
 .breadcrumbs__list {
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
+}
+.breadcrumbs__list li{
+    position: relative;
+}
+.breadcrumbs__list li::before{
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 20px;
+    background: url('../images/home/pagination.svg') no-repeat;
+    top: 6px;
+    left: -11px;
+}
+.breadcrumbs__list li:first-child::before{
+    display: none;
 }
 .breadcrumbs__list li a{
     font-size: 1.2rem;

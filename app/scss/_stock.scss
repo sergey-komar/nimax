@@ -7,11 +7,11 @@
 }
 .stock-block {
     display: flex;
-    gap: 4rem;
+    gap: 3rem;
     flex-wrap: wrap;
 }
 .stock-block__item {
-    width: 47.5%;
+    width: 48%;
     display: flex;
     gap: 2rem;
     border-radius: 10px;
@@ -23,8 +23,8 @@
     background: #3BB16D;
 }
 .stock-block__content {
-    width: 37rem;
-    padding-left: 4rem;
+    width: 26rem;
+    padding-left: 2rem;
     padding-bottom: 4rem;
 }
 .stock-block__item:nth-child(2),
@@ -69,6 +69,7 @@
 }
 .stock-block__item-img img{
     height: 100%;
+    min-width: 30rem;
 }
 .stock-block__content-button {
     display: block;
