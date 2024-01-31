@@ -33,7 +33,27 @@ $(function () {
       $('.reviews-home__box').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
-        dots: false
+        dots: false,
+        responsive: [
+            {
+              breakpoint: 1200,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1
+                
+              }
+            },
+           
+              {
+                breakpoint: 750,
+                settings: {
+                    slidesToShow: 1,
+                    arrows: false,
+                    dots: true
+                }
+              },
+          ]
+
       });
 
       $('.certificates-slider__inner').slick({
@@ -204,9 +224,9 @@ if(tabsItemReviews && tabsItemBtnReviews && tabsContentReviews){
 }
 
 
-const tabsItemProduct = document.querySelector('.product-one__item');
-const tabsItemBtnProduct = document.querySelectorAll('.product-one__item-btn');
-const tabsContentProduct = document.querySelectorAll('.product-one__content');
+const tabsItemProduct = document.querySelector('.work-one__item');
+const tabsItemBtnProduct = document.querySelectorAll('.work-one__item-btn');
+const tabsContentProduct = document.querySelectorAll('.work-one__content');
 
 function tabsHideProduct(){
     tabsContentProduct.forEach(item => {
@@ -215,20 +235,20 @@ function tabsHideProduct(){
     });
 
     tabsItemBtnProduct.forEach(btn =>{
-        btn.classList.remove('product-one__item-btn--active');
+        btn.classList.remove('work-one__item-btn--active');
     })
 }
 function tabsShowProduct(i){
     tabsContentProduct[i].classList.add('show');
     tabsContentProduct[i].classList.remove('hide');
-    tabsItemBtnProduct[i].classList.add('product-one__item-btn--active');
+    tabsItemBtnProduct[i].classList.add('work-one__item-btn--active');
 }
 
 if(tabsItemProduct && tabsItemBtnProduct && tabsContentProduct){
     tabsItemProduct.addEventListener('click', (e)=>{
         const target = e.target;
         
-        if(target && target.classList.contains('product-one__item-btn')){
+        if(target && target.classList.contains('work-one__item-btn')){
             tabsItemBtnProduct.forEach((item, i)=>{
                 if(target == item){
                     tabsHideProduct();

@@ -28,8 +28,15 @@
     width: calc(100% / 3 - 5rem);
     background-size: cover;
     background-repeat: no-repeat;
+    border-top: 5px solid transparent;
     border-bottom: 5px solid #32B4D9;
     transition: all .2s ease-in;
+}
+.questions-home__title{
+    margin-bottom: 4rem;
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
 }
 .border-bottom{
     border-top: 5px solid #32B4D9;
@@ -167,6 +174,7 @@
 .calculator-content {
     padding-top: 3.5rem;
     display: flex;
+    gap: 7rem;
 }
 .calculator-content__top,
 .calculator-content__center,
@@ -253,9 +261,11 @@
 .calculator-content__width {
     width: 36rem;
 }
+.calculator-content__left{
+    width: 52%;
+}
 .calculator-content__right {
-    max-width: 56rem;
-    margin-left: 7rem;
+    width: 48%;
 }
 .calculator-content__wrapper{
     box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.25);
@@ -450,10 +460,10 @@
     color: #32B4D9;
 }
 .reviews-home__box {
-    margin-bottom: 6rem;
-    display: flex;
-    justify-content: space-between;
-    gap: 2rem;
+    // margin-bottom: 6rem;
+    // display: flex;
+    // justify-content: space-between;
+    // gap: 2rem;
 }
 .reviews-home__item {
     width: 35rem;
