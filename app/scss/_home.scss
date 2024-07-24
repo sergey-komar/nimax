@@ -220,8 +220,34 @@
     display: flex;
     gap: 2rem;
 }
-.calculator-content__height-input input,
-.calculator-content__quantity-input input{
+// .calculator-content__height-input input,
+// .calculator-content__quantity-input input{
+//     width: 4rem;
+//     height: 4rem;
+//     display: flex;
+//     text-align: center;
+//     justify-content: center;
+//     align-items: center;
+//     border-radius: 50%;
+//     background: #FFF;
+//     border: 0px solid #DCDCDC;
+//     color: #B3B3B3;
+//     font-size: 1.4rem;
+//     cursor: pointer;
+// }
+// .calculator-content__height-input input.calculator-content__height-input--active,
+// .calculator-content__quantity-input input.calculator-content__quantity-input--active{
+//     background: #32B4D9;
+//     color: #FFF;
+//     font-size: 1.4rem;
+// }
+// .calculator-content__height-input input.calculator-content__height-input--active::placeholder,
+// .calculator-content__quantity-input input.calculator-content__quantity-input--active::placeholder{
+//     color: #FFF;
+//     font-size: 1.4rem;
+// }
+.calculator-content__height-number,
+.calculator-content__quantity-number{
     width: 4rem;
     height: 4rem;
     display: flex;
@@ -235,17 +261,13 @@
     font-size: 1.4rem;
     cursor: pointer;
 }
-.calculator-content__height-input input.calculator-content__height-input--active,
-.calculator-content__quantity-input input.calculator-content__quantity-input--active{
+.calculator-content__height-input--active,
+.calculator-content__quantity-input--active{
     background: #32B4D9;
     color: #FFF;
     font-size: 1.4rem;
 }
-.calculator-content__height-input input.calculator-content__height-input--active::placeholder,
-.calculator-content__quantity-input input.calculator-content__quantity-input--active::placeholder{
-    color: #FFF;
-    font-size: 1.4rem;
-}
+
 .calculator-content__color {
     width: 36rem;
 }
@@ -460,6 +482,10 @@
     color: #32B4D9;
 }
 .reviews-home__inner{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.reviews-home__item{
     margin-bottom: 3rem;
 }
 .reviews-home__box {
@@ -475,6 +501,7 @@
     margin-left: auto;
     margin-right: auto;
     background: #FFF;
+    box-shadow: 2px 2px 7px 0px rgba(40, 40, 40, 0.21);
     box-shadow: 2px 2px 7px 0px rgba(40, 40, 40, 0.21);
 }
 .reviews-home__link {
